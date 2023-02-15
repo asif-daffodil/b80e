@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dhaka {
+    width: 200px;
+    height: 200px;
+    background: #6495ed;
+    margin: 30px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 30;
+}
+
+.gazipur{
+    width: 200px;
+    height: 200px;
+    background: #ff69b4;
+    margin: 30px;
+    position: relative;
+    bottom: 100px;
+    right: 20px;
+    z-index: 20;
+}
+
+.dhanmondi {
+    width: calc(100% - 40px);
+    height: 100px;
+    background:#000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+}
+
+.dhanmondi::before {
+    content: attr(myat);
+    width: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background: #f00;
+    position: absolute;
+    line-height: 30px;
+    right: 10px;
+    top: -15px;
+}

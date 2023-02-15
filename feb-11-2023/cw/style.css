@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+.mtText {
+    color: rgb(173, 216, 230);
+    /* font-size: 24px; */
+    text-align: center;
+    /* font-style: italic; */
+    /* font-family: arial; */
+    /* text-transform: lowercase; */
+    /* font-variant: small-caps; */
+    /* text-decoration: line-through; */
+    /* font-weight: bolder; */
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-shadow: 2px 2px 2px #000;
+    font: italic small-caps bolder 24px auto arial;
+    /* border-width: 5px;
+    border-style: double;
+    border-color: black; */
+    /* border-top-width: 5px;
+    border-top-style: double;
+    border-top-color: black;
+    border-top: 5px double black; */
+    /* border-bottom-width: 5px;
+    border-bottom-style: double;
+    border-bottom-color: black; */
+    /* border-bottom: 5px double black; */
+    /* border-left-width: 5px;
+    border-left-style: double;
+    border-left-color: black; */
+    /* border-left: 5px double black; */
+    /* border-right-width: 5px;
+    border-right-style: double;
+    border-right-color: black;  */
+    /* border-right: 5px double black; */
+    border: 5px double rgb(173, 216, 230);
+    padding: 30px 60px;
+    /* padding-top: 40px; */
+    /* padding-bottom: 40px; */
+    /* padding-left: 40px; */
+    /* padding-right: 40px; */
+    /* padding: 20px 30px 10px 40px; */
+    /* padding: 20px 30px; */
+    /* padding: 20px 30px 10px; */
+    width: 660px;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto; */
+    /* margin: 20px 30px 10px 40px; */
+    /* margin: 20px 30px; */
+    /* margin: 20px 30px 10px; */
+    margin: 30px auto;
+    border-radius: 130px/50%;
+    box-shadow: 0px 0px 20px black, 0px 0px 30px black inset;
+    cursor: pointer;
+    background: linear-gradient(to top right, #008000c9,#ffffffb6, #0000ff92), url("./images/pexels-asad-photo-maldives-457878.jpg") no-repeat center /cover;
+
+    /* background-image: linear-gradient(to top right, #0080009a,#ffffffac, #0000ffa3), url("./images/pexels-asad-photo-maldives-457878.jpg");
+    background-color: ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#fff, #000);
+    display: flex;
+}
+
+.s {
+    width: 300px;
+    height: 300px;
+    background: url("../images/shakib.jpg");
+    background-size: cover;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.a{
+    width: 150px;
+    height: 150px;
+    background: url("../images/apu.jpg");
+    background-size: cover;
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    transition: 0.5s;
+}
+
+.b{
+    width: 150px;
+    height: 150px;
+    background: url("../images/bubli.jpg");
+    background-size: cover;
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    transition: 0.5s;
+}
+
+.c{
+    width: 150px;
+    height: 150px;
+    background: url("../images/chery.jpg");
+    background-size: cover;
+    position: absolute;
+    bottom: -150px;
+    right: -150px;
+    transition: 0.5s;
+}
+
+.d{
+    width: 150px;
+    height: 150px;
+    background: url("../images/dighi.jpg");
+    background-size: cover;
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+    transition: 0.5s;
+}
+
+.s:hover .a{
+    top: 0px;
+    left: 0px;
+}
+
+.s:hover .b{
+    top: 0px;
+    right: 0px;
+}
+
+.s:hover .c{
+    bottom: 0px;
+    right: 0px;
+}
+
+.s:hover .d{
+    bottom: 0px;
+    left: 0px;
+}

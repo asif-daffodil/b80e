@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dhaka{
+    width: max-content;
+    background: linear-gradient(to top, black, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 20px;
+    margin: 20px auto;
+    color: transparent;
+    font-size: 40px;
+    font-family: arial;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.dhaka::before{
+    content: "The Greight";
+}
+.dhaka::after{
+    content: "City";
+}
+
+.dhakapic{
+    width: 400px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 20px auto;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.557), rgba(0, 128, 0, 0.505)), url("./images/dhaka.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+}
