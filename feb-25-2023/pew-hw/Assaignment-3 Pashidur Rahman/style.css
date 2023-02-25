@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.mainContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: 50px;
+        margin: 50px;
+        border-radius: 20px;
+
+}
+.mainContent{
+        background-color: aquamarine;
+        height: 750px; 
+        width: 750px;
+         clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+        }
+.mainTitle {
+        margin: 50px;%
+        padding: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.mText {
+    padding-left: 30px;
+    padding-right: 50px;
+    text: center;
+    width: 600px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:dimgray; 
+     
+}
+.btn {
+    width:200px ;
+    margin-left:40px ;
+    margin-top: 30px;
+}
+
+.img {
+    height: 600px;
+    width: 650px ;
+}
+
+
+ 

@@ -1,0 +1,16 @@
+.messi {
+    background: linear-gradient(cyan, blue, purple);
+    clip-path: polygon(0 0, 65% 0, 48% 100%, 0% 100%);
+}
+
+p {
+    width: 600px;
+    height: 500px;
+}
+
+.readMore {
+    margin-left: 20px;
+}
+
+/* .messipic{
+} */
