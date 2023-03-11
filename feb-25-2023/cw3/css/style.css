@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.main {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+@media only screen and (max-width: 620px) {
+    .main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width: 620px) and (max-width: 920px) {
+    .main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 920px) {
+    .main{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.pain {
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    font-size: 64px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    padding: 20px 40px;
+    position: relative;
+    animation: abir 2s infinite linear;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.pain::before {
+    content: "";
+    width: 20px;
+    height: calc(200% + 40px);
+    background: linear-gradient( red, blue);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -10;
+    animation: abirBrfore 2s infinite linear;
+}
+
+.pain::after {
+    content: "";
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    z-index: -5;
+}
+
+@keyframes abir {
+    0% {color: red;}
+    50% {color: blue;}
+    100% {color: red;}
+}
+
+@keyframes abirBrfore {
+    0%{transform: translate(-50%, -50%);}
+    100%{transform: translate(-50%, -50%) rotate(360deg);}
+}

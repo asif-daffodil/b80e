@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.p{
+    line-height:25px;
+}
+.Social-icon {
+    background: gray;
+    padding: 50px 20px;  
+    text-align: center; 
+}
+
+.form {
+    text-align: center;
+}
+.btn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+.btn:hover {
+     background-color: gray;
+     cursor: pointer;
+}

@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.icon-container{
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 100px; 
+    background-color: lightblue;
+    box-shadow: 1px 5px 5px gray;
+
+}
+
+.all-icons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    padding: 40px;
+    background-color:lightcoral;
+    border-radius: 30px;
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    box-shadow: 1px 5px 5px gray;
+}
+
+.icon:hover{
+    color: black;
+    background-color: rgba(240, 128, 128, 0.800);
+    transition: 1.0;
+}

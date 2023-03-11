@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navigation {
+    width: 80%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.navigation > ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation > ul > li {
+    width: 100px;
+}
+
+.navigation > ul > li:first-child {
+    margin-left: 30px;
+}
+
+.navigation  > ul > li > a {
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+}

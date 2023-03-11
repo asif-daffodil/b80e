@@ -1,0 +1,49 @@
+.main{
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    font-size: 64px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    padding: 20px 40px;
+    position:relative;
+    animation: shakib 2s infinite linear;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.main::before {
+    content: "";
+    width: 20px;
+    height: 400%;
+    background: linear-gradient(red, blue);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -10;
+    animation: shakibBefore 2s infinite linear;
+}
+
+.main::after{
+    content: "";
+    width: calc(100% - 22px);
+    height:  calc(100% - 22px);
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    z-index: -5;
+    border: 1px solid black;
+}
+@keyframes shakib {
+    0% {color: red;}
+    50% {color: blue;}
+    100% {color: red;}
+}
+@keyframes shakibBefore {
+    0%{transform: translate(-50%, -50%);}
+    100%{transform: translate(-50%, -50%)rotate(360deg);}
+}

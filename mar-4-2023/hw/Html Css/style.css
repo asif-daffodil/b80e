@@ -1,0 +1,66 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.mahi {
+}
+.mahi:hover {   
+    transform: translate(50px, -22px) scale(90%, 90%);
+
+}
+
+
+
+.perent {
+
+    width: 100%;
+    background-color: blueviolet;
+    background: linear-gradient(260deg, rgb(100, 61, 9) 60%, rgb(71, 47, 11) 20%, #000);
+    height: 60vh;
+    font-family: 'Courier New', Courier, monospace;
+    padding: calc(20px + 0.3vw);
+    color: aliceblue;
+    display: grid;    
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);}
+    
+
+    .button {
+        border-radius: 15px;
+        font-size: 20px;
+        border: none;
+        background-color: #0a0; /* Green */
+        color: #fff;
+        padding: 10px 80px;
+        cursor: pointer;
+        text-transform: uppercase;
+        animation: sobhan 2s infinite linear;
+      }
+@keyframes sobhan  {
+    0% {color: red;}
+    50% {color: #000;}
+    100% {color: blue;}
+    
+}
+
+.child:hover  {
+    padding-left: 50px;
+    height: 53vh;
+    width: 100%;
+    background: orangered;
+    border-radius: 30px;
+}
+
+.me {font-size: 100px;
+    animation: me 2s infinite linear;
+    text-align: center;
+    align-items: center;
+    padding-top: 7%;}
+@keyframes me {
+    0% {color: red;}
+    50% {color: #000;}
+    100% {color: blue;}
+}

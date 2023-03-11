@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bg: lightblue;
+
+@mixin cc($w, $h, $jc) {
+    width: $w;
+    height: $h;
+    display: flex;
+    justify-content: $jc;
+    align-items: center;
+}
+
+.nav {
+    background: $bg;
+    @include cc(100%, 100vh, center);
+
+    >.snav {
+        list-style: none;
+        display: flex;
+        text-align: center;
+
+        >li {
+            width: 40px;
+            border: 1px solid #000;
+            margin: 0 5px;
+            border-radius: 50%;
+
+            >a {
+                text-decoration: none;
+                display: block;
+                line-height: 40px;
+                color: #000;
+            }
+
+            &:hover {
+                background: #000;
+
+                >a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.main {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 1px solid #000;
+    padding: 20px 40px;
+    position: relative;
+    animation: ani 2s infinite linear;
+    overflow: hidden;
+
+}
+
+.main::before {
+    content: "";
+    width: 20px;
+    height: calc(400% + 40px);
+    background: linear-gradient(to top right, blue, cyan);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    animation: ani1 1s infinite linear;
+    z-index: -10;
+}
+
+.main::after {
+    content: "";
+    width: calc(100% - 22px);
+    height: calc(100% - 22px);
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    z-index: -5;
+}
+
+@keyframes ani {
+    0% {
+        color: blue
+    }
+
+    50% {
+        color: cyan
+    }
+
+    100% {
+        color: purple
+    }
+}
+
+@keyframes ani1 {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+}
