@@ -21,3 +21,19 @@ const abc = 456;
 const sakibErBiye = d => d;
 
 console.log(sakibErBiye("Shorbonash!"));
+
+
+/* function personName () {
+    return "Salauddin Ahmed";
+} */
+
+// console.log(personName);
+/* const personName = function () {
+    return "Salauddin Ahmed";
+} */
+
+const personName = n => n;
+
+console.log(personName("Kabir Chowdhury"));
+
+
